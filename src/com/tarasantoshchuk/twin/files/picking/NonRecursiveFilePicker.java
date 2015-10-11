@@ -10,11 +10,12 @@ public class NonRecursiveFilePicker implements FilePicker {
     public NonRecursiveFilePicker(File targetFolder) {
         mTargetFolder = targetFolder;
     }
+
     @Override
     public List<File> getFiles() {
         File[] folderEntries = mTargetFolder.listFiles();
 
-        List<File> folderFiles = new ArrayList<File>();
+        List<File> folderFiles = new ArrayList<>();
 
         for(File entry: folderEntries) {
             if(entry.isFile()) {
