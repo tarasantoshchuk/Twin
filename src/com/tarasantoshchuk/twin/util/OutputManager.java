@@ -14,5 +14,7 @@ public class OutputManager {
                 System.out.println(file.getPath());
             }
         }
+
+        ErrorHelper.printWarnings();
     }
 }
